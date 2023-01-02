@@ -1,0 +1,353 @@
+* {
+  padding: 0%;margin: 0%;
+  box-sizing: border-box;
+}
+
+.top {
+  background-image: url('images/suit\ banner.jpg');
+  height: 90vh;
+  width: 100%;
+  background-position: calc(50%);
+  background-repeat: no-repeat;
+  background-size: cover;
+position: static;
+}
+.top2 {
+  background-image: url('images/pexels-waseem-kahlool-655806.jpg');
+  height: 90vh;
+  width: 100%;
+  background-position: calc(50%);
+  background-repeat: no-repeat;
+  background-size: cover;
+position: static;
+}
+.page-content{
+  width: 100%;
+  overflow: hidden;
+}
+.row{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.column{
+  width: 80%;
+  float: left;
+}
+.left1{
+  width: 20%;
+  float: left;
+}
+@media (max-width: 600px) {
+  .page-content{
+    width: 100%;
+  }
+  .column{
+    width: 100%;
+  }
+  .left1{
+    width: 100%;
+  }
+  .accordion{
+    width: 100%;
+    left: 0;
+    top: 0;
+    float: left;
+    position: relative;
+  }
+}
+/* accordion styles goes here*/
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: center;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+ .accordion:hover {
+  background-color: rgb(0, 0, 0);
+  outline: none;
+  color: #fff;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+padding: 0 18px;
+background-color: rgb(255, 255, 255);
+max-height: 100%;
+overflow: hidden;
+display: block;
+transition: 0.7s ease-out;
+}
+
+.accordion:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+  font-size: 13px;
+  color: rgb(187, 19, 19);
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+
+}
+/* The container */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 17px;
+  width: 100%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 24px;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #000000;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+/* styles of the card goes here*/
+#product{
+  margin: 10px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+margin-inline: 6px;
+justify-content: space-evenly;
+gap: 16px;
+flex-wrap: wrap;
+cursor: pointer;
+
+}
+#product:hover > :not(:hover){
+  opacity: .4;
+}
+.card{
+  max-width: 190px;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  transition: 0.8s;
+  height: 50%;
+}
+.price{
+  color: gray;
+  font-size: 18px;
+  margin: 0;
+  padding: 0%;
+}
+
+/*
+#card button{
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #111;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+text-transform: capitalize;
+  transition: all ease-in 0.7s;
+}
+#card button:hover{
+  background-color: rgb(79, 77, 77);
+}*/
+.fa-shopping-cart{
+margin-left: .89em;
+}
+.fa-heart{
+  background: rgb(158, 160, 158);
+  color: #fff;
+  padding: .5em;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  top: .7em;
+
+}
+/*button hover effect*/
+.btn, .rounded{
+  border: none;
+  font-size: 18px;
+  position: relative;
+  width: 100%;
+  cursor: pointer;
+  height: 26%;
+}
+.rounded{
+  border-radius: 50px;
+}
+.text-green{
+  color: #fff;
+  mix-blend-mode: difference;
+  font-size: 10px;
+}
+.rounded::before{
+  border-radius: 50px;
+  width: 25%;
+  background: #111;
+  content: "";
+  transition: all 0.85s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  width: 45%;
+  height: 100%;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  left: 0%;
+}
+.rounded:hover::before{
+  background: black;
+  width: 100%;
+}
+/*
+.btn::before{
+content: "";
+transition: all 0.85s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+width: 50%;
+height: 100%;
+background-color: black;
+position: absolute;
+top: 0;
+left: 0%;
+}
+.btn-text{
+  color: white;
+  mix-blend-mode: difference;
+  font-size: .5em;
+}
+.btn:hover::before{
+  background: black;
+  width: 100%;
+}*/
+@media screen and (min-width:500px) {
+  #card{
+      width: 350px;
+      margin: 0 auto;
+  }
+  .rounded{
+    left: 0;
+  }
+}
+@media screen and (min-width:300px){
+  .rounded{
+    left: 0;
+  }
+}
+.content h4, .content{
+  width: 100%;
+  text-align: center;
+  font-size: 13px;
+  text-transform: capitalize;
+  margin-left: 0;
+}
+.star{
+  text-align: center;
+  width: 100%;
+}
+.fa-star, .fa-star-half{
+  margin: 4px;
+  font-size: 10px;
+}
+.price{
+  text-align: center;
+  width: 100%;
+  display: flex;
+}
+.price p{
+  font-size: 12px;
+  text-align: center;
+  margin: 14px;
+}
+.price1{
+  text-decoration: line-through;
+}
+.next{
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+margin: 20px;
+}
+.next a{
+  color: #fff;
+  margin: 8px;
+  background-color: #111;
+  padding: 8px;
+  border-radius: 6px;
+transition:  ease-in-out all 0.4s;
+}
+.next a:hover{
+  background-color: rgb(210, 216, 216);
+}
+.image{
+  width: 100%;
+  height: 189px;
+  position: relative;
+}
+.image img{
+  width: 100%;
+  height: 110%;
+}

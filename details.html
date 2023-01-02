@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DRESS CLASSY STORE</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap"
+    rel="stylesheet">
+
+  <!-- Add icon library -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="details.css">
+  <link rel="stylesheet" href=".css">
+
+</head>
+
+<body>
+  <script src="dropdown.js"></script>
+  <script src="me.js"></script>
+  <section id="top">
+    <nav>
+      <h1><a href="index.html">CLASSIC DRESSERS</a></h1>
+
+      <div class="navbar" id="navlinks">
+        <a href="JavaScript:void(0)" class="close-btn" onclick="closenav()">&times</a>
+        <a href="shop.html"><i class="fa fa-home"></i>Home </a>
+        <a href=""><i class="fa fa-user-circle"></i> About</a>
+        <a href="contact.html"><i class="fa fa-address-book"></i> Contact </a>
+        <a href="cart.html"><i class="fa fa-shopping-cart"></i> Cart</a>
+      </div>
+      <span class="menu" onclick="opennav()"><i class="fa fa-bars"></i></span>
+    </nav>
+  </section>
+
+  <div class="column">
+    <div class="left-col"><img src="images/office lady suit.jpg" alt="" width="100px"></div>
+    <div class="left-col1"><img src="images/office work suits women.jpg" alt="" width="100px"></div>
+    <div class="row">
+      <div class="center"><img src="images/formal office women 2piece set suit.jpeg" alt="" width=""></div>
+      <div class="right-col">
+        <h2>CASABLANCA Avenida Printed T-shirt White</h2>
+        <p class="price">$720.54</p>
+        <p class="size">size: M</p>
+        <span class="active">
+          <p class="sizes">m</p>
+        </span>
+        <p class="sizes">l</p>
+        <p class="sizes">xl</p>
+        <p class="sizes">xxl</p>
+        <div class="wrapper">
+          <a class="button" href="#">Add to cart</a>
+        </div>
+
+        <!-- Filter: https://css-tricks.com/gooey-effect/ -->
+        <svg style="visibility: hidden; position: absolute;" width="0" height="0" xmlns="http://www.w3.org/2000/svg"
+          version="1.1">
+          <defs>
+            <filter id="goo">
+              <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+              <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+                result="goo" />
+              <feComposite in="SourceGraphic" in2="goo" operator="atop" />
+            </filter>
+          </defs>
+        </svg>
+        <div class="icon">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <p>Reviews 5.0 (20)</p>
+        </div>
+        <div class="pickup">
+          <p>pickup available at CLASSY DRESS by label usually ready in 1 hour</p>
+          <a href="#">view store information</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DRESS CLASSY STORE</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap"
+    rel="stylesheet">
+
+  <!-- Add icon library -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <script src="dropdown.js"></script>
+  <script src="me.js"></script>
+  <section id="top">
+    <nav>
+
+      <h1><a href="index.html">CLASSIC DRESSERS</a></h1>
+
+      <div class="navbar" id="navlinks">
+        <a href="JavaScript:void(0)" class="close-btn" onclick="closenav()">&times</a>
+        <a href="shop.html"><i class="fa fa-home"></i>Home </a>
+        <a href=""><i class="fa fa-user-circle"></i> About</a>
+        <a href="contact.html"><i class="fa fa-address-book"></i> Contact </a>
+        <a href="cart.html"><i class="fa fa-shopping-cart"></i> Cart</a>
+      </div>
+      <span class="menu" onclick="opennav()"><i class="fa fa-bars"></i></span>
+    </nav>
+  </section>
+  <div id="landing">
+  </div>
+  <section class="top2">
+
+  </section>
+  <div class="page-content">
+    <div class="row">
+      <div class="left1" style="background-color: rgb(245, 234, 234);">
+        <div class="content-radio">
+          <button class="accordion">Categories</button>
+          <div class="panel">
+            <label class="container">Latest (300)
+              <input type="checkbox" checked="checked">
+              <span class="checkmark"></span>
+            </label>
+            
+            <label class="container">Women (49)
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+            
+            <label class="container">Kids (10)
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+            
+            <label class="container">Girls (89)
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+
+            <label class="container">Boys (29)
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+
+            <label class="container">Men (89)
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+          </div>
+          <button class="accordion">Prices</button>
+          <div class="panel">
+            <label class="container">All
+              <input type="checkbox" checked="checked">
+              <span class="checkmark"></span>
+            </label>
+            
+            <label class="container">&euro; 30.00
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+            
+            <label class="container">&euro; 50.00
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+            
+            <label class="container">&euro; 65.00
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+
+            <label class="container">&euro; 70.00
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+
+            <label class="container">&euro; 120.00
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+          </div>
+          <button class="accordion">Sizes</button>
+          <div class="panel">
+            <label class="container">M
+              <input type="checkbox" >
+              <span class="checkmark"></span>
+            </label>
+            
+            <label class="container">L
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+            
+            <label class="container">XL
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+            
+            <label class="container">XXL
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+
+            <label class="container">XXX
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+
+            <label class="container">XXXXL
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+          </div>
+          <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+
+            for (i = 0; i < acc.length; i++) {
+              acc[i].addEventListener("click", function () {
+                /* Toggle between adding and removing the "active" class,
+                to highlight the button that controls the panel */
+                this.classList.toggle("active");
+
+                /* Toggle between hiding and showing the active panel */
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                  panel.style.display = "none";
+                } else {
+                  panel.style.display = "block";
+                }
+              });
+            }
+          </script>
+
+
+        </div>
+
+      </div>
+      <div class="column" style="background-color: rgb(255, 255, 255);">
+        <!-- #region -->
+        <div id="product">
+          <div class="card">
+            <div class="image"><img src="images/pullovers/2020-New-Fashion-Brand-Men-Hoodies-Spring-Autumn-Casual-Printing-Hoodies-Sweatshirts-Men-Street-Hip-hop.jpg" alt="hot sex panties" width="100%" height="189px"></div>
+            <div class="content">
+              <h4>Men-Hoodies </h4>
+              <div class="star">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half"></i>
+              </div>
+              <div class="price">
+                <p class="price1">&euro; 25.00</p>
+                <p>&euro; 23.99</p>
+              </div>
+              <button class="rounded"> <span class="text-green">ADD TO CART <i
+                    class="fa fa-shopping-cart"></i></span></button>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="image"><img src="images/pullovers/Autumn-New-Men-Tracksuit-Casual-Solid-Sports-Set-Long-Sleeved-TShirt-2-Pieces-Sets-Pants-Fashion-5.jpg" alt="hot sex panties"></div>
+            <div class="content">
+              <h4>Men-Tracksuit</h4>
+              <div class="star">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half"></i>
+              </div>
+              <div class="price">
+                <p class="price1">&euro; 40.00</p>
+                <p>&euro; 33.29</p>
+              </div>
+              <button class="rounded"> <span class="text-green">ADD TO CART <i
+                    class="fa fa-shopping-cart"></i></span></button>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="image"><img
+                src="images/pullovers/Autumn-New-Style-Women-Casual-Pullover-Slanting-Shoulder-Long-Sleeve-Rainbow-Pullover-Female-T-shirt-Tops.jpg_640x640.jpg" alt="" width="100%"></div>
+            <div class="content">
+              <h4>Female-T-shirt-Tops</h4>
+              <div class="star">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half"></i>
+              </div>
+              <div class="price">
+                <p class="price1">&euro; 55.00</p>
+                <p>&euro; 31.09</p>
+              </div>
+              <button class="rounded"> <span class="text-green">ADD TO CART <i
+                    class="fa fa-shopping-cart"></i></span></button>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="image"><img src="images/pullovers/casual loose hoodies.webp" alt="doodoing womens padded panties high waist butt lifter" width="100%" height="177px"></div>
+            <div class="content">
+              <h4>casual loose hoodies </h4>
+              <div class="star">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half"></i>
+              </div>
+              <div class="price">
+                <p class="price1">&euro; 25.00</p>
+                <p>&euro; 23.99</p>
+              </div>
+              <button class="rounded"> <span class="text-green">ADD TO CART <i
+                    class="fa fa-shopping-cart"></i></span></button>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="image"><img src="images/pullovers/Cloudstyle-2020-3D-Sweatshirt-Men-Splatter-Color-Paint-Stains-3D-Print-Streetwear-Jumpers-Top-Pullovers-Fashion.jpg_Q90.jpg_.webp" alt="hot erotic lingarie lace" width="100%" ></div>
+            <div class="content">
+              <h4>Sweatshirt-Men-Splatter</h4>
+              <div class="star">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half"></i>
+              </div>
+              <div class="price">
+                <p class="price1">&euro; 25.00</p>
+                <p>&euro; 23.99</p>
+              </div>
+              <button class="rounded"> <span class="text-green">ADD TO CART <i
+                    class="fa fa-shopping-cart"></i></span></button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image"><img src="images/pullovers/female skull and rose kangaroo pocket downstring hoodie.webp" alt="magnifique full coverage bra plus size" width="100%" ></div>
+            <div class="content">
+              <h4> female skull and rose</h4>
+              <div class="star">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half"></i>
+              </div>
+              <div class="price">
+                <p class="price1">&euro; 25.00</p>
+                <p>&euro; 23.99</p>
+              </div>
+              <button class="rounded"> <span class="text-green">ADD TO CART <i
+                    class="fa fa-shopping-cart"></i></span></button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image"><img src="images/pullovers/graffiti printed street wear.jpeg" alt="Lingerie Back Bow Panties" width="100%"></div>
+            <div class="content">
+              <h4>graffiti street wear</h4>
+              <div class="star">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half"></i>
+              </div>
+              <div class="price">
+                <p class="price1">&euro; 25.00</p>
+                <p>&euro; 23.99</p>
+              </div>
+              <button class="rounded"> <span class="text-green">ADD TO CART <i
+                    class="fa fa-shopping-cart"></i></span></button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image"><img src="images/pullovers/Harajuku-Streetwear-Fleece-Hoodies-Men-Sweatshirts-Letter-Printing-Casual-Hoodie-Warm-Hip-Hop-Swag-Hooded-Sweatshirt.jpg" alt=" Lot Womens Sexy Satin Bikini Panties" width="100%"></div>
+            <div class="content">
+              <h4>Harajuku-Streetwear</h4>
+              <div class="star">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half"></i>
+              </div>
+              <div class="price">
+                <p class="price1">&euro; 25.00</p>
+                <p>&euro; 23.99</p>
+              </div>
+              <button class="rounded"> <span class="text-green">ADD TO CART <i
+                    class="fa fa-shopping-cart"></i></span></button>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="image"><img src="images/pullovers/Harajuku-Streetwear-Fleece-Hoodies-Men-Sweatshirts-Letter-Printing-Casual-Hoodie-Warm-Hip-Hop-Swag-Hooded-Sweatshirt.jpg_640x640.jpg" alt="Seamless Sexy Bikini" width="100%" height="180px"></div>
+            <div class="content">
+              <h4>Streetwear-Fleece-Hoodie</h4>
+              <div class="star">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half"></i>
+              </div>
+              <div class="price">
+                <p class="price1">&euro; 25.00</p>
+                <p>&euro; 23.99</p>
+              </div>
+              <button class="rounded"> <span class="text-green">ADD TO CART <i
+                    class="fa fa-shopping-cart"></i></span></button>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="image"><img src="images/pullovers/hip-hop casual loose hoodies.webp" alt="Cum In Me Daddy" width="100%" height="180px"></div>
+            <div class="content">
+              <h4>casual loose hoodies</h4>
+              <div class="star">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half"></i>
+              </div>
+              <div class="price">
+                <p class="price1">&euro; 90.00</p>
+                <p>&euro; 74.99</p>
+              </div>
+              <button class="rounded"> <span class="text-green">ADD TO CART <i
+                    class="fa fa-shopping-cart"></i></span></button>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="image"><img src="images/pullovers/hoodie.webp" alt="Daddy's Little Slut" width="100%" ></div>
+            <div class="content">
+              <h4>Ash white mens hoodie</h4>
+              <div class="star">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half"></i>
+              </div>
+              <div class="price">
+                <p class="price1">&euro; 55.00</p>
+                <p>&euro; 40.99</p>
+              </div>
+              <button class="rounded"> <span class="text-green">ADD TO CART <i
+                    class="fa fa-shopping-cart"></i></span></button>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="image"><img src="images/pullovers/New-Arrival-Hot-Selling-Brand-Hoodies-Men-Spring-Autumn-Fashion-Casual-Long-Sleeve-Streetwear-Patchwork-Hooded.jpg" alt="Fill My Ass With Cum" width="100%"></div>
+            <div class="content">
+              <h4>Fashion-Long-Sleeve</h4>
+              <div class="star">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half"></i>
+              </div>
+              <div class="price">
+                <p class="price1">&euro; 75.00</p>
+                <p>&euro; 53.99</p>
+              </div>
+              <button class="rounded"> <span class="text-green">ADD TO CART <i
+                    class="fa fa-shopping-cart"></i></span></button>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="image"><img src="images/pullovers/orange skateboard casual sweatshirts.jpg" alt="G-string thong panties" width="100%"></div>
+            <div class="content">
+              <h4>skateboard casual sweatshirts</h4>
+              <div class="star">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half"></i>
+              </div>
+              <div class="price">
+                <p class="price1">&euro; 21.00</p>
+                <p>&euro; 19.49</p>
+              </div>
+              <button class="rounded"> <span class="text-green">ADD TO CART <i
+                    class="fa fa-shopping-cart"></i></span></button>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="image"><img src="images/pullovers/Samurai-and-Dragon-Tattoo-3D-All-Over-Printed-Unisex-Deluxe-Hoodie-Men-Sweatshirt-Zip-Pullover-Casual.jpg" alt="g-strings pants sex" width="100%"></div>
+            <div class="content">
+              <h4>Unisex-Deluxe-Hoodie</h4>
+              <div class="star">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half"></i>
+              </div>
+              <div class="price">
+                <p class="price1">&euro; 55.00</p>
+                <p>&euro; 40.99</p>
+              </div>
+              <button class="rounded"> <span class="text-green">ADD TO CART <i
+                    class="fa fa-shopping-cart"></i></span></button>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="image"><img src="images/pullovers/Single-Road-Mens-Hoodies-Men-2022-Sweatshirt-Pullover-Japanese-Streetwear-Harajuku-Hip-Hop-Fashion-Sweatshirts-Male.jpg" alt="lace g-strings" width="100%" ></div>
+            <div class="content">
+              <h4>Road-Mens-Hoodies</h4>
+              <div class="star">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half"></i>
+              </div>
+              <div class="price">
+                <p class="price1">&euro; 55.00</p>
+                <p>&euro; 40.99</p>
+              </div>
+              <button class="rounded"> <span class="text-green">ADD TO CART <i
+                    class="fa fa-shopping-cart"></i></span></button>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="image"><img src="images/pullovers/skateboard casual sweatshirt.jpg" alt="sex transparent lingarie" width="100%"></div>
+            <div class="content">
+              <h4>skateboard casual sweatshirt</h4>
+              <div class="star">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <div class="price">
+                <p class="price1">&euro; 55.00</p>
+                <p>&euro; 40.99</p>
+              </div>
+              <button class="rounded"> <span class="text-green">ADD TO CART <i
+                    class="fa fa-shopping-cart"></i></span></button>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="image"><img src="images/pullovers/unisex casual samurai streetwear hoodie.png" alt="Sexy Crotchless Underwear" width="100%"></div>
+            <div class="content">
+              <h4>samurai streetwear hoodie</h4>
+              <div class="star">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <div class="price">
+                <p class="price1">&euro; 55.00</p>
+                <p>&euro; 40.99</p>
+              </div>
+              <button class="rounded"> <span class="text-green">ADD TO CART <i
+                    class="fa fa-shopping-cart"></i></span></button>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="image"><img src="images/pullovers/white skeleton head hoodie.jpg" alt="" width="100%"></div>
+            <div class="content">
+              <h4>white skeleton head                                                                                                                                                                         </h4>
+              <div class="star">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <div class="price">
+                <p class="price1">&euro; 55.00</p>
+                <p>&euro; 40.99</p>
+              </div>
+              <button class="rounded"> <span class="text-green">ADD TO CART <i
+                    class="fa fa-shopping-cart"></i></span></button>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="image"><img src="images/thongs pants/Sexy Women Yes Daddy Print Panties Underwear Lingeries Knickers Lady Funny Brief.png" alt="Sexy Women Yes Daddy Print Panties Underwear" width="100%"></div>
+            <div class="content">
+              <h4>Yes Daddy panties</h4>
+              <div class="star">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half"></i>
+              </div>
+              <div class="price">
+                <p class="price1">&euro; 55.00</p>
+                <p>&euro; 40.99</p>
+              </div>
+              <button class="rounded"> <span class="text-green">ADD TO CART <i
+                    class="fa fa-shopping-cart"></i></span></button>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="image"><img src="images/thongs pants/Varsbaby Sheer Mesh See-through Bra Wireless Unlined Sexy Brassiere.jpg" alt="" width="100%" ></div>
+            <div class="content">
+              <h4>Wireless Sexy Brassiere</h4>
+              <div class="star">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half"></i>
+              </div>
+              <div class="price">
+                <p class="price1">&euro; 55.00</p>
+                <p>&euro; 40.99</p>
+              </div>
+              <button class="rounded"> <span class="text-green">ADD TO CART <i
+                    class="fa fa-shopping-cart"></i></span></button>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="image"><img src="images/thongs pants/women bragas thongs lace.jpg" alt="" width="100%" ></div>
+            <div class="content">
+              <h4>bragas thongs lace</h4>
+              <div class="star">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <div class="price">
+                <p class="price1">&euro; 55.00</p>
+                <p>&euro; 40.99</p>
+              </div>
+              <button class="rounded"> <span class="text-green">ADD TO CART <i
+                    class="fa fa-shopping-cart"></i></span></button>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="image"><img src="images/thongs pants/Women Lady Sexy See-Through Lingerie Lace Babydoll Sleepwear Underwear Nightwear.jpg" alt="Sexy See-Through Lingerie" width="100%"></div>
+            <div class="content">
+              <h4>See-Through Lingerie</h4>
+              <div class="star">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <div class="price">
+                <p class="price1">&euro; 55.00</p>
+                <p>&euro; 40.99</p>
+              </div>
+              <button class="rounded"> <span class="text-green">ADD TO CART <i
+                    class="fa fa-shopping-cart"></i></span></button>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="image"><img src="images/thongs pants/Women Satin Silk Lace Cami Vest Shorts Ladies Lingerie Pyjamas Set Pj Sleepwear.jpg" alt="Ladies Lingerie Pyjamas set" width="100%"></div>
+            <div class="content">
+              <h4>Ladies Lingerie Pyjamas</h4>
+              <div class="star">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <div class="price">
+                <p class="price1">&euro; 55.00</p>
+                <p>&euro; 40.99</p>
+              </div>
+              <button class="rounded"> <span class="text-green">ADD TO CART <i
+                    class="fa fa-shopping-cart"></i></span></button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image"><img src="images/thongs pants/Women Sexy Bra Set T-Back Thong Transparent Lingerie Tights Sleepwear Nightwear.jpg" alt="Bra Set T-Back Thong " width="100%"></div>
+            <div class="content">
+              <h4>Bra Set T-Back Thong </h4>
+              <div class="star">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <div class="price">
+                <p class="price1">&euro; 55.00</p>
+                <p>&euro; 40.99</p>
+              </div>
+              <button class="rounded"> <span class="text-green">ADD TO CART <i
+                    class="fa fa-shopping-cart"></i></span></button>
+            </div>
+        </div>
+        <div class="card">
+          <div class="image"><img src="images/thongs pants/Women Sexy Lace Lingerie Nightwear Underwear G-string Babydoll Sleepwear Bra Set.jpg" alt="G-string Babydoll Sleepwear" width="100%"></div>
+          <div class="content">
+            <h4>Sexy Babydoll Sleepwear</h4>
+            <div class="star">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <div class="price">
+              <p class="price1">&euro; 55.00</p>
+              <p>&euro; 40.99</p>
+            </div>
+            <button class="rounded"> <span class="text-green">ADD TO CART <i
+                  class="fa fa-shopping-cart"></i></span></button>
+          </div>
+
+        <!-- #endregion -->
+      </div>
+    </div>
+  </div>
+  <div class="next">
+    <a href="underpants2.html">2</a>
+    <a href="">3</a>
+  </div>
+  <footer>
+    <div class="bottom">
+      <div class="row">
+        <div class="footer-col">
+          <h2>quick links</h2>
+          <a href="shipping.html">shipping policy</a>
+          <a href="return.html">returns & refunds</a>
+          <a href="privacy.html">privacy policy</a>
+          <a href="terms.html">terms of service</a>
+          <a href="contact.html">contact us</a>
+        </div>
+        <div class="footer-col">
+          <h2>social media links</h2>
+          <a href=""><i class="fa fa-whatsapp"></i> whatsapp</a>
+          <a href=""><i class="fa fa-facebook"></i> facebook</a>
+          <a href=""><i class="fa fa-pinterest"></i> pinterest</a>
+          <a href=""><i class="fa fa-instagram"></i> instagram</a>
+
+        </div>
+        <div class="footer-col">
+          <h2>address</h2>
+          <a href="shipping.html">shipping policy</a>
+          <a href="return.html">returns & refunds</a>
+          <a href="privacy.html">privacy policy</a>
+          <a href="terms.html">terms of service</a>
+          <a href="contact.html">contact us</a>
+        </div>
+      </div>
+
+
+    </div>
+  </footer>
+
+</body>
+
+</html>
