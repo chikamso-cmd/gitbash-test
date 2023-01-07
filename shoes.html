@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>DRESS CLASSY STORE</title>
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,7 +17,8 @@
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="index.css">
-  <link rel="stylesheet" href="wears.css">
+  <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
@@ -30,293 +31,642 @@
 
       <div class="navbar" id="navlinks">
         <a href="JavaScript:void(0)" class="close-btn" onclick="closenav()">&times</a>
-        <a href="shop.html"><i class="fa fa-home"></i> Home</a>
+        <a href="shop.html"><i class="fa fa-home"></i>Home </a>
         <a href=""><i class="fa fa-user-circle"></i> About</a>
-        <a href="contact.html"><i class="fa fa-address-book"></i> Contact</a>
+        <a href="contact.html"><i class="fa fa-address-book"></i> Contact </a>
         <a href="cart.html"><i class="fa fa-shopping-cart"></i> Cart</a>
       </div>
       <span class="menu" onclick="opennav()"><i class="fa fa-bars"></i></span>
     </nav>
   </section>
-  <div id="landing1">
-    <h1>shoes </h1>
+  <div id="landing">
   </div>
-  <section class="outer">
-    <h1>shoes</h1>
-    <hr>
+  <section class="top2">
+
   </section>
-  <div class="items">
-    <div class="flip-card">
-      <div class="flip-card-inner">
-        <div class="flip-card-front">
-          <img src="images/black gustavo patent italian leather tassel loafers.jpg" alt="leather jacket" width="269px"
-            height="300px">
+  <div class="page-content">
+    <div class="row">
+      <div class="left1" style="background-color: rgb(245, 234, 234);">
+        <div class="content-radio">
+          <button class="accordion">Categories</button>
+          <div class="panel">
+            <label class="container">Latest (300)
+              <input type="checkbox" checked="checked">
+              <span class="checkmark"></span>
+            </label>
+            
+            <label class="container">Women (49)
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+            
+            <label class="container">Kids (10)
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+            
+            <label class="container">Girls (89)
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+
+            <label class="container">Boys (29)
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+
+            <label class="container">Men (89)
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+          </div>
+          <button class="accordion">Prices</button>
+          <div class="panel">
+            <label class="container">All
+              <input type="checkbox" checked="checked">
+              <span class="checkmark"></span>
+            </label>
+            
+            <label class="container">&euro; 30.00
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+            
+            <label class="container">&euro; 50.00
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+            
+            <label class="container">&euro; 65.00
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+
+            <label class="container">&euro; 70.00
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+
+            <label class="container">&euro; 120.00
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+          </div>
+          <button class="accordion">Sizes</button>
+          <div class="panel">
+            <label class="container">M
+              <input type="checkbox" >
+              <span class="checkmark"></span>
+            </label>
+            
+            <label class="container">L
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+            
+            <label class="container">XL
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+            
+            <label class="container">XXL
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+
+            <label class="container">XXX
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+
+            <label class="container">XXXXL
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+          </div>
+          <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+
+            for (i = 0; i < acc.length; i++) {
+              acc[i].addEventListener("click", function () {
+                /* Toggle between adding and removing the "active" class,
+                to highlight the button that controls the panel */
+                this.classList.toggle("active");
+
+                /* Toggle between hiding and showing the active panel */
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                  panel.style.display = "none";
+                } else {
+                  panel.style.display = "block";
+                }
+              });
+            }
+          </script>
+
 
         </div>
-        <div class="flip-card-back">
-          <h1>black gustavo patent italian leather tassel loafers</h1>
-          <p class="price">$20.23</p>
-          <p class="details">black gustavo patent italian leather tassel loafers</p>
-          <a id="form" onclick="errormsg()" href="">add to cart <i class="fa fa-shopping-cart"></i></a>
-        </div>
+
       </div>
-    </div>
+      <div class="column" style="background-color: rgb(255, 255, 255);">
+        <!-- #region -->
+        <div id="product">
+          <div class="card">
+            <div class="image"><img src="images/shoes/black gustavo patent italian leather tassel loafers.jpg" alt="italian leather tassel loafers" width="100%" height="189px"></div>
+            <div class="content">
+              <h4>italian leather loafers</h4>
+              <div class="star">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half"></i>
+              </div>
+              <div class="price">
+                <p class="price1">&euro; 25.00</p>
+                <p>&euro; 23.99</p>
+              </div>
+              <button class="rounded"> <span class="text-green">ADD TO CART <i
+                    class="fa fa-shopping-cart"></i></span></button>
+            </div>
+          </div>
 
-    <div class="flip-card">
-      <div class="flip-card-inner">
-        <div class="flip-card-front">
-          <img src="images/black jesse mix velour italian leather half shoe.jpg" alt="hodded black lwather jackets"
-            width="269px" height="300px">
+          <div class="card">
+            <div class="image"><img src="images/shoes/black jesse mix velour italian leather half shoe.jpg" alt="leather half shoe"></div>
+            <div class="content">
+              <h4>leather half shoe</h4>
+              <div class="star">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half"></i>
+              </div>
+              <div class="price">
+                <p class="price1">&euro; 40.00</p>
+                <p>&euro; 33.29</p>
+              </div>
+              <button class="rounded"> <span class="text-green">ADD TO CART <i
+                    class="fa fa-shopping-cart"></i></span></button>
+            </div>
+          </div>
 
-        </div>
-        <div class="flip-card-back">
-          <h1>italian leather half shoe</h1>
-          <p class="price">$18.30</p>
-          <p class="details">black jesse mix velour italian leather half shoe.</p>
-          <a id="form" onclick="errormsg()" href="">add to cart <i class="fa fa-shopping-cart"></i></a>
-        </div>
-      </div>
-    </div>
+          <div class="card">
+            <div class="image"><img
+                src="images/shoes/brogues,oxford casual shoes.jpg" alt="oxford casual shoes" width="100%"></div>
+            <div class="content">
+              <h4>oxford casual shoes</h4>
+              <div class="star">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half"></i>
+              </div>
+              <div class="price">
+                <p class="price1">&euro; 55.00</p>
+                <p>&euro; 31.09</p>
+              </div>
+              <button class="rounded"> <span class="text-green">ADD TO CART <i
+                    class="fa fa-shopping-cart"></i></span></button>
+            </div>
+          </div>
 
-    <div class="flip-card">
-      <div class="flip-card-inner">
-        <div class="flip-card-front">
-          <img src="images/brogues,oxford casual shoes.jpg" alt="leather jacket" width="269px" height="300px">
+          <div class="card">
+            <div class="image"><img src="images/shoes/buckle heel boots women fashion shoes.png" alt="buckle heel boots" width="100%" height="177px"></div>
+            <div class="content">
+              <h4>buckle heel boots</h4>
+              <div class="star">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half"></i>
+              </div>
+              <div class="price">
+                <p class="price1">&euro; 25.00</p>
+                <p>&euro; 23.99</p>
+              </div>
+              <button class="rounded"> <span class="text-green">ADD TO CART <i
+                    class="fa fa-shopping-cart"></i></span></button>
+            </div>
+          </div>
 
-        </div>
-        <div class="flip-card-back">
-          <h1>brogues,oxford casual shoes</h1>
-          <p class="price">$84.23</p>
-          <p class="details">brogues,oxford casual shoes" alt="leather jacket" width="269px" height="300px">.</p>
-          <a id="form" onclick="errormsg()" href="">add to cart <i class="fa fa-shopping-cart"></i></a>
-        </div>
-      </div>
-    </div>
+          <div class="card">
+            <div class="image"><img src="images/shoes/caterpilla invader st black fullmoon.jpg" alt="st black fullmoon" width="100%" ></div>
+            <div class="content">
+              <h4>st black fullmoon</h4>
+              <div class="star">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half"></i>
+              </div>
+              <div class="price">
+                <p class="price1">&euro; 25.00</p>
+                <p>&euro; 23.99</p>
+              </div>
+              <button class="rounded"> <span class="text-green">ADD TO CART <i
+                    class="fa fa-shopping-cart"></i></span></button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image"><img src="images/shoes/fila disruptor chain trainers white gold women.avif" alt="trainers white gold women" width="100%" ></div>
+            <div class="content">
+              <h4> white gold trainers</h4>
+              <div class="star">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half"></i>
+              </div>
+              <div class="price">
+                <p class="price1">&euro; 25.00</p>
+                <p>&euro; 23.99</p>
+              </div>
+              <button class="rounded"> <span class="text-green">ADD TO CART <i
+                    class="fa fa-shopping-cart"></i></span></button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image"><img src="images/shoes/fila trainers strade low kids pink mist.jpg" alt="fila trainers strade " width="100%"></div>
+            <div class="content">
+              <h4>fila trainers strade </h4>
+              <div class="star">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half"></i>
+              </div>
+              <div class="price">
+                <p class="price1">&euro; 25.00</p>
+                <p>&euro; 23.99</p>
+              </div>
+              <button class="rounded"> <span class="text-green">ADD TO CART <i
+                    class="fa fa-shopping-cart"></i></span></button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image"><img src="images/shoes/handmade casual shoes men moccasian comfortable leather shoes.jpeg" alt=" casual shoes men moccasian" width="100%"></div>
+            <div class="content">
+              <h4>men moccasian shoes</h4>
+              <div class="star">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half"></i>
+              </div>
+              <div class="price">
+                <p class="price1">&euro; 25.00</p>
+                <p>&euro; 23.99</p>
+              </div>
+              <button class="rounded"> <span class="text-green">ADD TO CART <i
+                    class="fa fa-shopping-cart"></i></span></button>
+            </div>
+          </div>
 
-    <div class="flip-card">
-      <div class="flip-card-inner">
-        <div class="flip-card-front">
-          <img src="images/buckle heel boots women fashion shoes.png" alt="Women's Fur-Lined Trench Coat" width="269px"
-            height="300px">
+          <div class="card">
+            <div class="image"><img src="images/shoes/high top black and white canvas.jpeg" alt="black and white canvas"></div>
+            <div class="content">
+              <h4>black and white canvas</h4>
+              <div class="star">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half"></i>
+              </div>
+              <div class="price">
+                <p class="price1">&euro; 25.00</p>
+                <p>&euro; 23.99</p>
+              </div>
+              <button class="rounded"> <span class="text-green">ADD TO CART <i
+                    class="fa fa-shopping-cart"></i></span></button>
+            </div>
+          </div>
 
+          <div class="card">
+            <div class="image"><img src="images/shoes/IMG-20221019-WA0008.jpg" alt="" width="100%" height="180px"></div>
+            <div class="content">
+              <h4>women office shoes </h4>
+              <div class="star">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half"></i>
+              </div>
+              <div class="price">
+                <p class="price1">&euro; 90.00</p>
+                <p>&euro; 74.99</p>
+              </div>
+              <button class="rounded"> <span class="text-green">ADD TO CART <i
+                    class="fa fa-shopping-cart"></i></span></button>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="image"><img src="images/shoes/IMG-20221019-WA0015.jpg" alt="" width="100%" ></div>
+            <div class="content">
+              <h4>korean women shoes</h4>
+              <div class="star">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half"></i>
+              </div>
+              <div class="price">
+                <p class="price1">&euro; 55.00</p>
+                <p>&euro; 40.99</p>
+              </div>
+              <button class="rounded"> <span class="text-green">ADD TO CART <i
+                    class="fa fa-shopping-cart"></i></span></button>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="image"><img src="images/shoes/IMG-20221019-WA0082.jpg" alt="Fill My Ass With Cum" width="100%"></div>
+            <div class="content">
+              <h4>cute black white shoes</h4>
+              <div class="star">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half"></i>
+              </div>
+              <div class="price">
+                <p class="price1">&euro; 75.00</p>
+                <p>&euro; 53.99</p>
+              </div>
+              <button class="rounded"> <span class="text-green">ADD TO CART <i
+                    class="fa fa-shopping-cart"></i></span></button>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="image"><img src="images/shoes/IMG-20230105-WA0009.jpg" alt="blue naked wolfe shoes" width="100%"></div>
+            <div class="content">
+              <h4>stylish naked wolfe shoes</h4>
+              <div class="star">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half"></i>
+              </div>
+              <div class="price">
+                <p class="price1">&euro; 21.00</p>
+                <p>&euro; 19.49</p>
+              </div>
+              <button class="rounded"> <span class="text-green">ADD TO CART <i
+                    class="fa fa-shopping-cart"></i></span></button>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="image"><img src="images/shoes/IMG-20230105-WA0008.jpg" alt="stylish naked wolfe shoes" width="100%"></div>
+            <div class="content">
+              <h4>Ustylish naked wolfe shoes</h4>
+              <div class="star">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half"></i>
+              </div>
+              <div class="price">
+                <p class="price1">&euro; 55.00</p>
+                <p>&euro; 40.99</p>
+              </div>
+              <button class="rounded"> <span class="text-green">ADD TO CART <i
+                    class="fa fa-shopping-cart"></i></span></button>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="image"><img src="images/shoes/IMG-20230105-WA0030.jpg" alt="lace g-strings" width="100%" ></div>
+            <div class="content">
+              <h4>black fashion shoes</h4>
+              <div class="star">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half"></i>
+              </div>
+              <div class="price">
+                <p class="price1">&euro; 55.00</p>
+                <p>&euro; 40.99</p>
+              </div>
+              <button class="rounded"> <span class="text-green">ADD TO CART <i
+                    class="fa fa-shopping-cart"></i></span></button>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="image"><img src="images/shoes/IMG-20230105-WA0039.jpg" alt="sex transparent lingarie" width="100%"></div>
+            <div class="content">
+              <h4>black fashion half shoes</h4>
+              <div class="star">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <div class="price">
+                <p class="price1">&euro; 55.00</p>
+                <p>&euro; 40.99</p>
+              </div>
+              <button class="rounded"> <span class="text-green">ADD TO CART <i
+                    class="fa fa-shopping-cart"></i></span></button>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="image"><img src="images/shoes/IMG-20230105-WA0040.jpg" alt="Sexy Crotchless Underwear" width="100%"></div>
+            <div class="content">
+              <h4>versace fashion shoes</h4>
+              <div class="star">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <div class="price">
+                <p class="price1">&euro; 55.00</p>
+                <p>&euro; 40.99</p>
+              </div>
+              <button class="rounded"> <span class="text-green">ADD TO CART <i
+                    class="fa fa-shopping-cart"></i></span></button>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="image"><img src="images/shoes/IMG-20230105-WA0043.jpg" alt="" width="100%"></div>
+            <div class="content">
+              <h4>black fashion shoes</h4>                                                                                                                                                                         </h4>
+              <div class="star">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <div class="price">
+                <p class="price1">&euro; 55.00</p>
+                <p>&euro; 40.99</p>
+              </div>
+              <button class="rounded"> <span class="text-green">ADD TO CART <i
+                    class="fa fa-shopping-cart"></i></span></button>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="image"><img src="images/shoes/IMG-20230105-WA0044.jpg" alt="Sexy Women Yes Daddy Print Panties Underwear" width="100%"></div>
+            <div class="content">
+              <h4>nike air</h4>
+              <div class="star">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half"></i>
+              </div>
+              <div class="price">
+                <p class="price1">&euro; 55.00</p>
+                <p>&euro; 40.99</p>
+              </div>
+              <button class="rounded"> <span class="text-green">ADD TO CART <i
+                    class="fa fa-shopping-cart"></i></span></button>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="image"><img src="images/pullovers/f137e22d37909c9ec9268f8bb1e49d8e.jpg" alt="" width="100%" ></div>
+            <div class="content">
+              <h4>Crop top long sleeves</h4>
+              <div class="star">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half"></i>
+              </div>
+              <div class="price">
+                <p class="price1">&euro; 55.00</p>
+                <p>&euro; 40.99</p>
+              </div>
+              <button class="rounded"> <span class="text-green">ADD TO CART <i
+                    class="fa fa-shopping-cart"></i></span></button>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="image"><img src="images/pullovers/Round-Neck-Women’s-Sweatshirt.jpg" alt="" width="100%" ></div>
+            <div class="content">
+              <h4>Unisex sweatshirt</h4>
+              <div class="star">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <div class="price">
+                <p class="price1">&euro; 55.00</p>
+                <p>&euro; 40.99</p>
+              </div>
+              <button class="rounded"> <span class="text-green">ADD TO CART <i
+                    class="fa fa-shopping-cart"></i></span></button>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="image"><img src="images/pullovers/streetwear tracksuit pullover.jpg" alt="Sexy See-Through Lingerie" width="100%"></div>
+            <div class="content">
+              <h4>streetwear pullover</h4>
+              <div class="star">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <div class="price">
+                <p class="price1">&euro; 55.00</p>
+                <p>&euro; 40.99</p>
+              </div>
+              <button class="rounded"> <span class="text-green">ADD TO CART <i
+                    class="fa fa-shopping-cart"></i></span></button>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="image"><img src="images/pullovers/Men-Sweatshirts-Hoodie-Men-Tops-Spring-and-Autumn-Street-Men-Wear-Japanese-Hip-Hop-Casual-Fashion.jpg_Q90.jpg_.webp" alt="Ladies Lingerie Pyjamas set" width="100%"></div>
+            <div class="content">
+              <h4>Men-Sweatshirts-Hoodie</h4>
+              <div class="star">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <div class="price">
+                <p class="price1">&euro; 55.00</p>
+                <p>&euro; 40.99</p>
+              </div>
+              <button class="rounded"> <span class="text-green">ADD TO CART <i
+                    class="fa fa-shopping-cart"></i></span></button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image"><img src="images/pullovers/crop sweatshirts.webp" alt="Bra Set T-Back Thong " width="100%"></div>
+            <div class="content">
+              <h4>crop sweatshirts </h4>
+              <div class="star">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <div class="price">
+                <p class="price1">&euro; 55.00</p>
+                <p>&euro; 40.99</p>
+              </div>
+              <button class="rounded"> <span class="text-green">ADD TO CART <i
+                    class="fa fa-shopping-cart"></i></span></button>
+            </div>
         </div>
-        <div class="flip-card-back">
-          <h1>buckle heel boots </h1>
-          <p class="price">$159.28</p>
-          <p class="details">buckle heel boots women fashion shoes.</p>
-          <a id="form" onclick="errormsg()" href="">add to cart <i class="fa fa-shopping-cart"></i></a>
-        </div>
+        <div class="card">
+          <div class="image"><img src="images/pullovers/Cloudstyle-2020-3D-Sweatshirt-Men-Splatter-Color-Paint-Stains-3D-Print-Streetwear-Jumpers-Top-Pullovers-Fashion.jpg_Q90.jpg_.webp" alt="G-string Babydoll Sleepwear" width="100%"></div>
+          <div class="content">
+            <h4>Sweatshirt Color Splatter</h4>
+            <div class="star">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <div class="price">
+              <p class="price1">&euro; 55.00</p>
+              <p>&euro; 40.99</p>
+            </div>
+            <button class="rounded"> <span class="text-green">ADD TO CART <i
+                  class="fa fa-shopping-cart"></i></span></button>
+          </div>
+
+        <!-- #endregion -->
       </div>
     </div>
   </div>
-
-  <div class="items">
-    <div class="flip-card">
-      <div class="flip-card-inner">
-        <div class="flip-card-front">
-          <img src="images/caterpilla invader st black fullmoon.jpg" alt="leather jacket" width="269px" height="300px">
-
-        </div>
-        <div class="flip-card-back">
-          <h1>caterpilla invader st black fullmoon</h1>
-          <p class="price">$120.23</p>
-          <p class="details">caterpilla invader st black fullmoon.</p>
-          <a id="form" onclick="errormsg()" href="">add to cart <i class="fa fa-shopping-cart"></i></a>
-        </div>
-      </div>
-    </div>
-
-    <div class="flip-card">
-      <div class="flip-card-inner">
-        <div class="flip-card-front">
-          <img src="images/fila trainers strade low kids pink mist.jpg" alt="leather jacket" width="269px"
-            height="300px">
-
-        </div>
-        <div class="flip-card-back">
-          <h1>fila trainers strade</h1>
-          <p class="price">$34.44</p>
-          <p class="details">fila trainers strade low kids pink mist.</p>
-          <a id="form" onclick="errormsg()" href="">add to cart <i class="fa fa-shopping-cart"></i></a>
-        </div>
-      </div>
-    </div>
-
-    <div class="flip-card">
-      <div class="flip-card-inner">
-        <div class="flip-card-front">
-          <img src="images/handmade casual shoes men moccasian comfortable leather shoes.jpeg" alt="leather jacket"
-            width="269px" height="300px">
-
-        </div>
-        <div class="flip-card-back">
-          <h1>men moccasian comfortable leather shoes</h1>
-          <p class="price">$34.93</p>
-          <p class="details">handmade casual shoes men moccasian comfortable leather shoes.</p>
-          <a id="form" onclick="errormsg()" href="">add to cart <i class="fa fa-shopping-cart"></i></a>
-        </div>
-      </div>
-    </div>
-
-    <div class="flip-card">
-      <div class="flip-card-inner">
-        <div class="flip-card-front">
-          <img src="images/leather casual moccasian antiskid rubber sole loafers.jpeg" alt="leather jacket"
-            width="269px" height="300px">
-
-        </div>
-        <div class="flip-card-back">
-          <h1>antiskid rubber sole loafers</h1>
-          <p class="price">$61.09</p>
-          <p class="details">leather casual moccasian antiskid rubber sole loafers.</p>
-          <a id="form" onclick="errormsg()" href="">add to cart <i class="fa fa-shopping-cart"></i></a>
-        </div>
-      </div>
-    </div>
-
-    <div class="flip-card">
-      <div class="flip-card-inner">
-        <div class="flip-card-front">
-          <img src="images/mens spring tide shoes korean.jpeg" alt="leather jacket" width="269px" height="300px">
-
-        </div>
-        <div class="flip-card-back">
-          <h1>mens spring tide shoes korean</h1>
-          <p class="price">$14.99</p>
-          <p class="details">mens spring tide shoes korean.</p>
-          <a id="form" onclick="errormsg()" href="">add to cart <i class="fa fa-shopping-cart"></i></a>
-        </div>
-      </div>
-    </div>
-
-    <div class="flip-card">
-      <div class="flip-card-inner">
-        <div class="flip-card-front">
-          <img src="images/royal blue heels python peep toe sandals platform high heels.jpg" alt="leather jacket"
-            width="269px" height="300px">
-
-        </div>
-        <div class="flip-card-back">
-          <h1>royal blue heels python peep toe sandals</h1>
-          <p class="price">$21.60</p>
-          <p class="details">royal blue heels python peep toe sandals platform high heels.</p>
-          <a id="form" onclick="errormsg()" href="">add to cart <i class="fa fa-shopping-cart"></i></a>
-        </div>
-      </div>
-    </div>
-
-    <div class="flip-card">
-      <div class="flip-card-inner">
-        <div class="flip-card-front">
-          <img src="images/women boots thick heels martin lace up.jpg" alt="leather jacket" width="269px"
-            height="300px">
-
-        </div>
-        <div class="flip-card-back">
-          <h1>women boots thick heels martin lace up</h1>
-          <p class="price">$38.32</p>
-          <p class="details">women boots thick heels martin lace up.</p>
-          <a id="form" onclick="errormsg()" href="">add to cart <i class="fa fa-shopping-cart"></i></a>
-        </div>
-      </div>
-    </div>
-
-    <div class="flip-card">
-      <div class="flip-card-inner">
-        <div class="flip-card-front">
-          <img src="images/women_s_royal_blue_heels_strappy_stilettos_platform_sandals.jpg" alt="leather jacket"
-            width="269px" height="300px">
-
-        </div>
-        <div class="flip-card-back">
-          <h1>women_s_royal_blue_heels_strappy</h1>
-          <p class="price">$34.99</p>
-          <p class="details">women_s_royal_blue_heels_strappy_stilettos_platform_sandals.</p>
-          <a id="form" onclick="errormsg()" href="">add to cart <i class="fa fa-shopping-cart"></i></a>
-        </div>
-      </div>
-    </div>
-
-    <div class="flip-card">
-      <div class="flip-card-inner">
-        <div class="flip-card-front">
-          <img src="images/IMG-20221019-WA0008.jpg" alt="leather jacket" width="269px" height="300px">
-
-        </div>
-        <div class="flip-card-back">
-          <h1>women_s_royal_blue_heels_strappy</h1>
-          <p class="price">$34.99</p>
-          <p class="details"></p>
-          <a id="form" onclick="errormsg()" href="">add to cart <i class="fa fa-shopping-cart"></i></a>
-        </div>
-      </div>
-    </div>
-
-    <div class="flip-card">
-      <div class="flip-card-inner">
-        <div class="flip-card-front">
-          <img src="images/IMG-20221019-WA0015.jpg" alt="leather jacket" width="269px" height="300px">
-
-        </div>
-        <div class="flip-card-back">
-          <h1>women_s_royal_blue_heels_strappy</h1>
-          <p class="price">$34.99</p>
-          <p class="details"></p>
-          <a id="form" onclick="errormsg()" href="">add to cart <i class="fa fa-shopping-cart"></i></a>
-        </div>
-      </div>
-    </div>
-
-    <div class="flip-card">
-      <div class="flip-card-inner">
-        <div class="flip-card-front">
-          <img src="images/IMG-20221019-WA0084.jpg" alt="leather jacket" width="269px" height="300px">
-
-        </div>
-        <div class="flip-card-back">
-          <h1>women_s_royal_blue_heels_strappy</h1>
-          <p class="price">$34.99</p>
-          <p class="details">women_s ady pink slip in sandals.</p>
-          <a id="form" onclick="errormsg()" href="">add to cart <i class="fa fa-shopping-cart"></i></a>
-        </div>
-      </div>
-    </div>
-
-    <div class="flip-card">
-      <div class="flip-card-inner">
-        <div class="flip-card-front">
-          <img src="images/IMG-20221019-WA0086.jpg" alt="leather jacket" width="269px" height="300px">
-
-        </div>
-        <div class="flip-card-back">
-          <h1>women_s_royal_blue_heels_strappy</h1>
-          <p class="price">$34.99</p>
-          <p class="details">women_s_royal_blue_heels_strappy.</p>
-          <a id="form" onclick="errormsg()" href="">add to cart <i class="fa fa-shopping-cart"></i></a>
-        </div>
-      </div>
-    </div>
-  </div>
-
   <div class="next">
-
-    <a href="">1</a>
-    <a href="">2</a>
-    <a href="">3</a>
+    <a href="#">2</a>
+    <a href="#">3</a>
   </div>
-
-  <div class="prev-and-next">
-    <a class="bck" href="sweat-shirts.html"><i class="fa fa-arrow-left" style="margin-right: 10px;"></i>click here to
-      browse our sweat-shirt categories</a>
-    <a class="next1" href="underpants.html">click here to view our underpants closet <i class="fa fa-arrow-right"
-        style="margin-left: 10px;"></i></a>
-  </div>
-
-
-
   <footer>
     <div class="bottom">
-      <hr>
       <div class="row">
         <div class="footer-col">
           <h2>quick links</h2>
@@ -347,6 +697,7 @@
 
     </div>
   </footer>
+
 </body>
 
 </html>
