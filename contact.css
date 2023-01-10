@@ -8,7 +8,7 @@
 /* Create two equal columns that floats next to each other */
 .column {
     float: left;
-    width: 50%;
+    width: 40%;
     padding: 10px;
     overflow: hidden;
     height: 100%; 
@@ -19,12 +19,26 @@
   }
   .column1 {
     float: left;
-    width: 50%;
-    padding: 10px;
+    width: 59%;
     overflow: hidden;
-    background: white;
+    height: 100%;
+    background: rgb(255, 255, 255);
   }
-  
+  @media (max-width: 600px) {
+    .column, .column1{
+      width: 100%;
+    } 
+  }
+  @media (max-width: 400px){
+.sub{
+  left: 0;
+}
+  }
+  @media (max-width: 294px){
+    .sub{
+      width: 100%;
+    }
+  }
   /* Clear floats after the columns */
   .row:after {
     content: "";
@@ -152,6 +166,16 @@ textarea::placeholder{
 }
 .sub:hover{
   background-color: rgb(59, 62, 59);
+}
+@media (max-width: 294px){
+  .sub{
+    width: 40%;
+  }
+}
+@media (max-width: 300px){
+  .sub{
+    width: 40%;
+  }
 }
 
 @media only screen and (max-width: 600px) {

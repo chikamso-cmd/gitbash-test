@@ -1,5 +1,6 @@
 * {
-  padding: 0%;margin: 0%;
+  padding: 0%;
+  margin: 0%;
   box-sizing: border-box;
 }
 
@@ -10,8 +11,9 @@
   background-position: calc(50%);
   background-repeat: no-repeat;
   background-size: cover;
-position: static;
+  position: static;
 }
+
 .top2 {
   background-image: url('images/pexels-waseem-kahlool-655806.jpg');
   height: 90vh;
@@ -19,8 +21,9 @@ position: static;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-position: sticky;
+  position: sticky;
 }
+
 .top3 {
   background-image: url('images/joggers/banner1\ \(2\).jpeg');
   height: 70vh;
@@ -28,41 +31,50 @@ position: sticky;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-position: static;
+  position: static;
 }
+
 @media (max-width: 600px) {
-  .top2{
+  .top2 {
     position: inherit;
   }
 }
-.page-content{
+
+.page-content {
   width: 100%;
   overflow: hidden;
 }
-.row{
+
+.row {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
-.column{
-  width: 80%;
+
+.column {
+  width: 79%;
   float: left;
 }
-.left1{
+
+.left1 {
   width: 20%;
   float: left;
 }
+
 @media (max-width: 600px) {
-  .page-content{
+  .page-content {
     width: 100%;
   }
-  .column{
+
+  .column {
     width: 100%;
   }
-  .left1{
+
+  .left1 {
     width: 100%;
   }
-  .accordion{
+
+  .accordion {
     width: 100%;
     left: 0;
     top: 0;
@@ -70,6 +82,7 @@ position: static;
     position: relative;
   }
 }
+
 /* accordion styles goes here*/
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
@@ -82,10 +95,11 @@ position: static;
   border: none;
   outline: none;
   transition: 0.4s;
+  margin-top: 1%;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
- .accordion:hover {
+.accordion:hover {
   background-color: rgb(0, 0, 0);
   outline: none;
   color: #fff;
@@ -93,16 +107,17 @@ position: static;
 
 /* Style the accordion panel. Note: hidden by default */
 .panel {
-padding: 0 18px;
-background-color: rgb(255, 255, 255);
-max-height: 100%;
-overflow: hidden;
-display: block;
-transition: 0.7s ease-out;
+  padding: 0 18px;
+  background-color: rgb(255, 255, 255);
+  height: 100%;
+  overflow: hidden;
+  display: block;
+  transition: 0.7s ease-out;
 }
 
 .accordion:after {
-  content: "\2796"; /* Unicode character for "minus" sign (-) */
+  content: "\2796";
+  /* Unicode character for "minus" sign (-) */
   font-size: 13px;
   color: rgb(187, 19, 19);
   float: right;
@@ -110,9 +125,11 @@ transition: 0.7s ease-out;
 }
 
 .active:after {
-  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  content: '\02795';
+  /* Unicode character for "plus" sign (+) */
 
 }
+
 /* The container */
 .container {
   display: block;
@@ -122,6 +139,8 @@ transition: 0.7s ease-out;
   cursor: pointer;
   font-size: 17px;
   width: 100%;
+  margin-top: 10%;
+  font-weight: lighter;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -140,7 +159,7 @@ transition: 0.7s ease-out;
 /* Create a custom checkbox */
 .checkmark {
   position: absolute;
-  top: 24px;
+  top: 20%;
   left: 0;
   height: 25px;
   width: 25px;
@@ -148,12 +167,12 @@ transition: 0.7s ease-out;
 }
 
 /* On mouse-over, add a grey background color */
-.container:hover input ~ .checkmark {
+.container:hover input~.checkmark {
   background-color: #ccc;
 }
 
 /* When the checkbox is checked, add a blue background */
-.container input:checked ~ .checkmark {
+.container input:checked~.checkmark {
   background-color: #000000;
 }
 
@@ -165,7 +184,7 @@ transition: 0.7s ease-out;
 }
 
 /* Show the checkmark when checked */
-.container input:checked ~ .checkmark:after {
+.container input:checked~.checkmark:after {
   display: block;
 }
 
@@ -181,31 +200,35 @@ transition: 0.7s ease-out;
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
+
 /* styles of the card goes here*/
-#product{
-  margin: 10px;
+#product {
   width: 100%;
   position: relative;
   display: flex;
   flex-direction: row;
-margin-inline: 6px;
-justify-content: space-evenly;
-gap: 16px;
-flex-wrap: wrap;
-cursor: pointer;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  cursor: pointer;
 
 }
-#product:hover > :not(:hover){
+
+#product:hover> :not(:hover) {
   opacity: .4;
 }
-.card{
-  max-width: 190px;
+
+.card {
+  max-width: 270px;
+  height: 100%;
+  overflow: hidden;
   box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
   background-color: white;
   transition: 0.8s;
-  height: 50%;
+  
 }
-.price{
+
+.price {
   color: gray;
   font-size: 18px;
   margin: 0;
@@ -229,10 +252,11 @@ text-transform: capitalize;
 #card button:hover{
   background-color: rgb(79, 77, 77);
 }*/
-.fa-shopping-cart{
-margin-left: .89em;
+.fa-shopping-cart {
+  margin-left: .89em;
 }
-.fa-heart{
+
+.fa-heart {
   background: rgb(158, 160, 158);
   color: #fff;
   padding: .5em;
@@ -242,24 +266,30 @@ margin-left: .89em;
   top: .7em;
 
 }
+
 /*button hover effect*/
-.btn, .rounded{
+.btn,
+.rounded {
   border: none;
   font-size: 18px;
   position: relative;
   width: 100%;
   cursor: pointer;
-  height: 26%;
+  height: 29%;
+  margin-bottom: 5px;
 }
-.rounded{
+
+.rounded {
   border-radius: 50px;
 }
-.text-green{
+
+.text-green {
   color: #fff;
   mix-blend-mode: difference;
   font-size: 10px;
 }
-.rounded::before{
+
+.rounded::before {
   border-radius: 50px;
   width: 25%;
   background: #111;
@@ -272,10 +302,12 @@ margin-left: .89em;
   top: 0;
   left: 0%;
 }
-.rounded:hover::before{
+
+.rounded:hover::before {
   background: black;
   width: 100%;
 }
+
 /*
 .btn::before{
 content: "";
@@ -297,85 +329,107 @@ left: 0%;
   width: 100%;
 }*/
 @media screen and (min-width:500px) {
-  #card{
-      width: 350px;
-      margin: 0 auto;
+  #card {
+    width: 350px;
+    margin: 0 auto;
   }
-  .rounded{
+
+  .rounded {
     left: 0;
   }
 }
-@media screen and (min-width:300px){
-  .rounded{
+
+@media screen and (min-width:300px) {
+  .rounded {
     left: 0;
   }
 }
-.content h4, .content{
+
+.content {
   width: 100%;
   text-align: center;
   font-size: 13px;
   text-transform: capitalize;
-  margin-left: 0;
+  margin: 0 auto;
 }
-.star{
+.content h4{
+  margin-top: 0;
+}
+
+.star {
   text-align: center;
   width: 100%;
 }
-.fa-star, .fa-star-half{
+
+.fa-star,
+.fa-star-half {
   margin: 4px;
   font-size: 10px;
 }
-.price{
+
+.price {
   text-align: center;
   width: 100%;
   display: flex;
+  margin: 0 auto;
+  justify-content:center;
 }
-.price p{
+
+.price p {
   font-size: 12px;
   text-align: center;
   margin: 14px;
 }
-.price1{
+
+.price1 {
   text-decoration: line-through;
 }
-.next{
+
+.next {
   background-color: rgb(255, 255, 255);
   width: 100%;
   justify-content: center;
   text-align: center;
-margin: 20px;
+  margin: 20px;
 }
-.next a{
+
+.next a {
   color: #fff;
   margin: 8px;
   background-color: #111;
   padding: 8px;
   border-radius: 6px;
-transition:  ease-in-out all 0.4s;
+  transition: ease-in-out all 0.4s;
 }
-.next a:hover{
+
+.next a:hover {
   background-color: rgb(210, 216, 216);
 }
-.image{
+
+.image {
   width: 100%;
-  height: 189px;
   position: relative;
 }
-.image img{
-  width: 100%;
-  height: 110%;
+
+.image img {
+  width: 200px;
+  height: 200px;
 }
+
 /*may also like*/
 /*width stretch to 100%*/
-#mayalsolike{
+#mayalsolike {
   width: 100%;
   position: relative;
   color: white;
   text-align: center;
 }
-#landing6{
-height: 60vh;
-width: 100%;
-background: url('images/pexels-ylanite-koppens-934070.jpg');
-}
 
+#landing6 {
+  height: 100vh;
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+  width: 100%;
+  background: url('images/pexels-ylanite-koppens-934070.jpg');
+}
