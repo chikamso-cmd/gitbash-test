@@ -1,207 +1,318 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DRESS CLASSY STORE</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap"
+      rel="stylesheet"
+    />
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DRESS CLASSY STORE</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap"
-    rel="stylesheet">
+    <!-- Add icon library -->
 
-  <!-- Add icon library -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <script src="dropdown.js"></script>
+  </head>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="index.css">
-  <script src="dropdown.js"></script>
-</head>
+  <body>
+    <section id="top">
+      <nav>
+        <h1><a href="index.html">CLASSIC DRESSERS</a></h1>
 
-<body>
+        <div class="navbar" id="navlinks">
+          <span class="close-button">
+            <i class="fa fa-times" onclick="closenav()"></i>
+          </span>
+           
+          <a href="shop.html"><i class="fa fa-home"></i> Home</a>
 
-  <section id="top">
-    <nav>
-
-      <h1><a href="index.html">CLASSIC DRESSERS</a></h1>
-
-      <div class="navbar" id="navlinks">
-        <a href="JavaScript:void(0)" class="close-btn" onclick="closenav()">&times</a>
-        <a href="shop.html"><i class="fa fa-home"></i> Home</a>
-
-        <a href=""><i class="fa fa-user-circle"></i> About</a>
-        <a href="contact.html"><i class="fa fa-address-book"></i> Contact</a>
-        <a href="contact.html"><i class="fa fa-shopping-cart"></i> Cart</a>
+          <a href=""><i class="fa fa-user-circle"></i> About</a>
+          <a href="contact.html"><i class="fa fa-address-book"></i> Contact</a>
+          <a href="contact.html"><i class="fa fa-shopping-cart"></i> Cart</a>
+        </div>
+        <span class="menu" onclick="opennav()"><i class="fa fa-bars"></i></span>
+      </nav>
+    </section>
+    <div id="landing">
+      <div id="slider">
+        <figure>
+          <img src="images/suit banner.jpg" alt="" />
+        </figure>
+        <figure>
+          <img src="images/landing page banner.jpg" alt="" />
+        </figure>
+        <figure>
+          <img src="images/pexels-pixabay-247204.jpg" alt="" />
+        </figure>
+        <figure>
+          <img src="images/pexels-ylanite-koppens-934070.jpg" alt="" />
+        </figure>
+        <figure>
+          <img src="images/suit banner.jpg" alt="" />
+        </figure>
       </div>
-      <span class="menu" onclick="opennav()"><i class="fa fa-bars"></i></span>
-    </nav>
-  </section>
-  <div id="landing">
-    <div id="slider">
-      <figure>
-        <img src="images/suit banner.jpg" alt="">
-      </figure>
-      <figure>
-        <img src="images/landing page banner.jpg" alt="">
-      </figure>
-      <figure>
-        <img src="images/pexels-pixabay-247204.jpg" alt="">
-      </figure>
-      <figure>
-        <img src="images/pexels-ylanite-koppens-934070.jpg" alt="">
-      </figure>
-      <figure>
-        <img src="images/suit banner.jpg" alt="">
-      </figure>
+      <!-- <h1>freshen up</h1>
+      <h2>your look</h2> -->
     </div>
-    <h1>freshen up</h1>
-    <h2>your look</h2>
-  </div>
-  <div class="content">
-    <h1>Collection List</h1>
-  </div>
-  <!-- collection -->
-  <div class="collection">
-    <div class="row">
-      <div class="col">
-        <a href="outerwear.html"><img src="images/jackets/jacket.jpg" alt=""></a>
-        <h1>Outerwear</h1>
-
-      </div>
-
-      <div class="col">
-        <a href="joggers.html"> <img src="images/joggers/jpggers.jpg" alt=""></a>
-        <h1>Joggers</h1>
-      </div>
-
-      <div class="col">
-        <a href="hoodie.html"> <img
-            src="images/pullovers/cute bunny hoodie long sleeves lovely female rabbit swatshirt for girls.jpg"
-            alt=""></a>
-        <h1>hoodie</h1>
-      </div>
-      <div class="col">
-        <a href="glasses.html"> <img src="images/glasses/vintage eyewear glasses frame for women round.jpg" alt=""></a>
-        <h1>glasses</h1>
-      </div>
-      <div class="col">
-        <a href="cap.html"> <img src="images/baseball-cap-hat-652x500.jpg" alt=""></a>
-        <h1>cap/hats</h1>
-      </div>
-      <div class="col">
-        <a href="wrist-watches.html"> <img
-            src="images/watches/v8 men's casual wristwatche quartz movement super speed unique style black analog.jpeg"
-            alt=""></a>
-        <h1>wrist watch</h1>
-      </div>
-      <div class="col">
-        <a href="sweat-shirts.html"> <img src="images/swear shirts.jpg" alt=""></a>
-        <h1>sweat shirts</h1>
-      </div>
-      <div class="col">
-        <a href="shoes.html"> <img src="images/shoes/high top black and white canvas.jpeg" alt=""></a>
-        <h1>shoes</h1>
-      </div>
+    <div class="content">
+      <h1>Collection List....</h1>
     </div>
-  </div>
-  <div class="more">
-    <h1>hey thats not all...here's more...</h1>
-    <hr>
-  </div>
-  <div class="collection">
-    <div class="row">
-      <div class="col">
-        <a href="underpants.html"> <img src="images/thongs pants/pants.jpg" alt=""></a>
-        <h1>underpants</h1>
-      </div>
-
-      <div class="col">
-        <img src="images/suits.jpg" alt="">
-        <a href="suits.html">
-          <h1>suits/blazers</h1>
-        </a>
-
-      </div>
-
-      <div class="col">
-        <a href="polo.html"> <img src="images/polo/polo for men.jpg" alt=""></a>
-        <h1>polo</h1>
-      </div>
-      <div class="col">
-        <a href="tracksuits.html"> <img src="images/joggers/gap women softspun joggers light grey marle.jpg" alt=""></a>
-        <h1>tracksuits</h1>
-      </div>
-      <div class="col">
-        <a href="shorts.html"> <img src="images/nicker.webp" alt=""></a>
-        <h1>shorts</h1>
-      </div>
-      <div class="col">
-        <a href="shirts.html"> <img src="images/shirts 1.jpg" alt=""></a>
-        <h1>shirts</h1>
-      </div>
-      <div class="col">
-        <a href="pants.html"> <img src="images/joggers/hip hop pocket cargo pants.jpg" alt=""></a>
-        <h1>pants</h1>
-      </div>
-      <div class="col">
-        <a href="jean.html"> <img src="images/jean/IMG-20230104-WA0013.jpg" alt="black dior jean trowsers"></a>
-        <h1>Jean</h1>
-      </div>
-    </div>
-  </div>
-<!-- #region more -->
-
-<!-- #endregion more-->
-
-
-
-
-  <footer>
-    <div class="bottom">
-      <hr>
+    <!-- collection -->
+    <div class="collection">
       <div class="row">
-        <div class="footer-col">
-          <h2>quick links</h2>
-          <a href="shipping.html">shipping policy</a>
-          <a href="return.html">returns & refunds</a>
-          <a href="privacy.html">privacy policy</a>
-          <a href="terms.html">terms of service</a>
-          <a href="contact.html">contact us</a>
+        <div class="col">
+          <a href="outerwear.html"
+            ><img src="images/jackets/jacket.jpg" alt="picture of a jacket"
+          /></a>
+          <h1>Outerwear</h1>
         </div>
-        <div class="footer-col">
-          <h2>social media links</h2>
-          <a href=""><i class="fa fa-whatsapp"></i> whatsapp</a>
-          <a href=""><i class="fa fa-facebook"></i> facebook</a>
-          <a href=""><i class="fa fa-pinterest"></i> pinterest</a>
-          <a href=""><i class="fa fa-instagram"></i> instagram</a>
 
+        <div class="col">
+          <a href="joggers.html">
+            <img src="images/joggers/jpggers.jpg" alt=""
+          /></a>
+          <h1>Joggers</h1>
         </div>
-        <div class="message">
-          <div class="subs">
-            <div class="cont-ents">
-              <h2>subscribe website for latest updates</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem harum quibusdam, omnis suscipit ipsam
-                cum natus, eveniet labore facilis error sequi praesentium! Dolores nostrum cupiditate ipsa quisquam sit
-                consectetur dolorem.</p>
-              <form action="" method="post">
-                <label for="Email adress"> Email address</label>
-                <!--get customers email-->
-                <input type="email" name="" id="" placeholder="hello@example.com" required>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit accusamus iste numquam!</p>
-                <!--subscribe button-->
-                <button id="subscribe" type="submit">subscribe now</button>
-              </form>
 
+        <div class="col">
+          <a href="hoodie.html">
+            <img
+              src="images/pullovers/cute bunny hoodie long sleeves lovely female rabbit swatshirt for girls.jpg"
+              alt=""
+          /></a>
+          <h1>hoodie</h1>
+        </div>
+        <div class="col">
+          <a href="glasses.html">
+            <img
+              src="images/glasses/vintage eyewear glasses frame for women round.jpg"
+              alt=""
+          /></a>
+          <h1>glasses</h1>
+        </div>
+        <div class="col">
+          <a href="cap.html">
+            <img src="images/baseball-cap-hat-652x500.jpg" alt=""
+          /></a>
+          <h1>cap/hats</h1>
+        </div>
+        <div class="col">
+          <a href="wrist-watches.html">
+            <img
+              src="images/watches/v8 men's casual wristwatche quartz movement super speed unique style black analog.jpeg"
+              alt=""
+          /></a>
+          <h1>wrist watch</h1>
+        </div>
+        <div class="col">
+          <a href="sweat-shirts.html">
+            <img src="images/swear shirts.jpg" alt=""
+          /></a>
+          <h1>sweat shirts</h1>
+        </div>
+        <div class="col">
+          <a href="shoes.html">
+            <img src="images/shoes/fila trainers strade low kids pink mist.jpg" alt=""
+          /></a>
+          <h1>shoes</h1>
+        </div>
+      </div>
+    </div>
+    <!-- advert section  -->
+
+    <section class="ads">
+      <div class="advert"></div>
+    </section>
+    <!-- end of section -->
+    <div class="more">
+      <h1>hey thats not all...here's more...</h1>
+      <hr />
+    </div>
+    <div class="collection">
+      <div class="row">
+        <div class="col">
+          <a href="underpants.html">
+            <img src="images/thongs pants/pants.jpg" alt=""
+          /></a>
+          <h1>underpants</h1>
+        </div>
+
+        <div class="col">
+          <img src="images/suits.jpg" alt="" />
+          <a href="suits.html">
+            <h1>suits/blazers</h1>
+          </a>
+        </div>
+
+        <div class="col">
+          <a href="polo.html">
+            <img src="images/polo/polo for men.jpg" alt=""
+          /></a>
+          <h1>polo</h1>
+        </div>
+        <div class="col">
+          <a href="tracksuits.html">
+            <img
+              src="images/joggers/gap women softspun joggers light grey marle.jpg"
+              alt=""
+          /></a>
+          <h1>tracksuits</h1>
+        </div>
+        <div class="col">
+          <a href="shorts.html"> <img src="images/nicker.webp" alt="" /></a>
+          <h1>shorts</h1>
+        </div>
+        <div class="col">
+          <a href="shirts.html"> <img src="images/shirts 1.jpg" alt="" /></a>
+          <h1>shirts</h1>
+        </div>
+        <div class="col">
+          <a href="pants.html">
+            <img src="images/joggers/hip hop pocket cargo pants.jpg" alt=""
+          /></a>
+          <h1>pants</h1>
+        </div>
+        <div class="col">
+          <a href="jean.html">
+            <img
+              src="images/jean/IMG-20230104-WA0013.jpg"
+              alt="black dior jean trowsers"
+          /></a>
+          <h1>Jean</h1>
+        </div>
+      </div>
+    </div>
+    <!-- #testimonials -->
+    <div id="testimonials">
+      <div class="testimonial-header">
+        <h2>what our customers say.</h2>
+        <div class="testimonial">
+          <div class="testimonial-col">
+            <div class="header-big">
+              <h3>fernand</h3>
+            </div>
+            <h4>fernand</h4>
+            <blockquote>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque,
+              sint reprehenderit dolores vitae commodi hic voluptas dicta beatae
+              culpa! Neque illo non est ab distinctio iste porro officia
+              provident laudantium.
+            </blockquote>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <a href="#" class="cta">&rarr;</a>
+          </div>
+          <div class="testimonial-col">
+            <div class="header-big">
+              <h3>justin</h3>
+            </div>
+            <h4>justin</h4>
+            <blockquote>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque,
+              sint reprehenderit dolores vitae commodi hic voluptas dicta beatae
+              culpa! Neque illo non est ab distinctio iste porro officia
+              provident laudantium.
+            </blockquote>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fas fa-star-half"></i>
+            <a href="#" class="cta">&rarr;</a>
+          </div>
+          <div class="testimonial-col">
+            <div class="header-big">
+              <h3>fredrick</h3>
+            </div>
+            <h4>fredrick</h4>
+            <blockquote>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque,
+              sint reprehenderit dolores vitae commodi hic voluptas dicta beatae
+              culpa! Neque illo non est ab distinctio iste porro officia
+              provident laudantium.
+            </blockquote>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <a href="#" class="cta">&rarr;</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- #testimonials-->
+
+    <footer>
+      <div class="bottom">
+        <hr />
+        <div class="row">
+          <div class="footer-col">
+            <h2>quick links</h2>
+            <a href="shipping.html">shipping policy</a>
+            <a href="return.html">returns & refunds</a>
+            <a href="privacy.html">privacy policy</a>
+            <a href="terms.html">terms of service</a>
+            <a href="contact.html">contact us</a>
+          </div>
+          <div class="footer-col">
+            <h2>social media links</h2>
+            <a href=""><i class="fa fa-whatsapp"></i> whatsapp</a>
+            <a href=""><i class="fa fa-facebook"></i> facebook</a>
+            <a href=""><i class="fa fa-pinterest"></i> pinterest</a>
+            <a href=""><i class="fa fa-instagram"></i> instagram</a>
+          </div>
+
+          <div class="footer-col">
+            <h2>Address</h2>
+            <p>Lorem ipsum dolor, sit amet <br> adipisicing elit. </p>
+           <a href="+2348120237430"><i class="fa fas fa-phone"></i>08120237430</a>
+           <a href="www.google.com"><i class="fa fas fa-address-book"></i>godspowerchikamso@gmail.com</a>
+          </div>
+       
+          <div class="message">
+            <div class="subs">
+              <div class="cont-ents">
+                <h2>subscribe website for latest updates</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+                  harum quibusdam, omnis suscipit ipsam cum natus, eveniet
+                  labore facilis error sequi praesentium! Dolores nostrum
+                  cupiditate ipsa quisquam sit consectetur dolorem.
+                </p>
+                <form action="" method="post">
+                  <label for="Email adress"> Email address</label>
+                  <!--get customers email-->
+                  <input
+                    type="email"
+                    name=""
+                    id=""
+                    placeholder="hello@example.com"
+                    required
+                  />
+                  <p class="lorem">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Velit accusamus iste numquam!
+                  </p>
+                  <!--subscribe button-->
+                  <button id="subscribe" type="submit">subscribe now</button>
+                </form>
+              </div>
             </div>
           </div>
         </div>
       </div>
-
-
-    </div>
-  </footer>
-</body>
-
+    </footer>
+  </body>
 </html>

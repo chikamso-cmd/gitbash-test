@@ -1,2 +1,5 @@
 # gitbash-test
-creating a website where people can buy stuffs like clothes and accesories
+an open source website 
+contributions are welcome
+can copy code for your portfolio
+
