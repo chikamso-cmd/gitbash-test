@@ -1,24 +1,196 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-.contact{
-  width: 100vw;
-  height: 100vh;
-  background: url('images/logo/form-bg.jpg');
+#contact {
+  /* width: 100vw; */
+  height: 49rem;
+  background: url("images/logo/form-bg.jpg");
   /* filter: blur(2px); */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.columns {
+   /* background: #ffffff2a; makes background look like a glass */
+  width: 70vw;
+  border-radius: 20px;
+  height: 100%;
+  margin: 0 auto; /* to bring the box to the center of the page*/
+  position: relative;
+  top: 12%;
+  padding: 20px;
+  overflow: hidden; /* so content in this box dosent overflow outside the box */
+}
+.contents {
+  width: 60%;
+  margin: 0 auto;
+}
+.background{
+  width: 100%;
+  height: 30vh;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url('images/logo/contact1.jpg');
+}
+.background h1{
+  text-align: center;
+  color: #fff;
+  font-size: 30px;
+  /* margin-top: 10px; */
+  text-transform: capitalize;
+   padding: 10px; 
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.background p{
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  text-transform: capitalize;
+  /* background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)); */
+}
+form{
+  width: 100%;
+  background: #fff;
+  padding: 10px;
+  overflow: hidden;
+  height: 100%;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+input{
+border-top: none;
+border-right: none;
+  margin: 20px;
+  width: 90%;
+  border-left: none;
+  border-radius: 0;
+  outline: none;
+  line-height: 12px;
+  /* cursor: pointer; */
+}
+textarea{
+  width: 90%;
+  margin: 20px;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  outline: 0;
+}
+input::placeholder, textarea::placeholder{
+  margin: 10px;
+  color: #0355ff;
+  text-transform: capitalize;
+}
+.under1::before{
+  width: 0;
+  margin: 20px;
+  content: '';
+  height: 2px;
+  position: absolute;
+  background: #0355ff;
+  left: 0;
+  top: 45px;
+  transition: all cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.6s;
+}
+.under1:hover::before, .under2:hover::before, .under3:hover::before, .under4:hover::before{
+  width: 90%;
+}
+.under2::before{
+  width: 0;
+  margin: 20px;
+  content: '';
+  height: 2px;
+  position: absolute;
+  background: #0355ff;
+  left: 0;
+   top: 7.7em;
+   transition: all cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.6s; 
+}
+.under3::before{
+  width: 0;
+  margin: 20px;
+  content: '';
+  height: 2px;
+  position: absolute;
+  background: #0355ff;
+  left: 0;
+   top: 12.5em; 
+   transition: all cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.6s; 
+}
+.under4::before{
+  width: 0;
+  margin: 20px;
+  content: '';
+  height: 2px;
+  position: absolute;
+  background: #0355ff;
+  left: 0;
+   top: 22em; 
+   transition: all cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.6s; 
+}
+#sub-btn{
+  width: 37%;
+  height: 3rem;
+  margin: 10px;
+  padding: 10px;
+  border: none;
+  overflow: hidden;
+  border-radius: 50px; 
+  background: #0355ff;
+  cursor: pointer;
+}
+#sub-btn p{
+  color: #fff;
+ font-size: 20px;
+ text-transform: capitalize;
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#sub-btn .fa-arrow-right{
+  margin-left: 10px;
+}
+#sub-btn .fa-arrow-right{
+  animation: forward 3000ms linear infinite;
+}
+@keyframes forward{
+  0%{transform: translateX(-1rem);}
+  100%{transform: translateX(1rem);}
+}
+@media (max-width: 600px) {
+  #contact{
+    width: 100%;
+  }
+  .columns{
+    width: 100%;
+  }
+  .contents{
+    width: 100%;
+  }
+}
+@media (max-width: 900px) {
+  #contact{
+    width: 100%;
+  }
+  .columns{
+    width: 100%;
+  }
+  .contents{
+    width: 100%;
+  }
 }
 .footer-col h2 {
-    text-transform: uppercase;
-    font-size: 14px;
-    color: #0355ff;
-    text-align: center;
-    background: #fff;
-    padding: 7px;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #0355ff;
+  text-align: center;
+  background: #fff;
+  padding: 7px;
 }

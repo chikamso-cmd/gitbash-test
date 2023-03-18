@@ -1,79 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DRESS CLASSY STORE</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap"
+      rel="stylesheet"
+    />
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DRESS CLASSY STORE</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap"
-    rel="stylesheet">
+    <!-- Add icon library -->
 
-  <!-- Add icon library -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="contact.css" />
+  </head>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="index.css">
-  <link rel="stylesheet" href="contact.css">
-</head>
+  <body>
+    <script src="dropdown.js"></script>
+    <script src="me.js"></script>
+    <section id="top">
+      <nav>
+        <h1><a href="index.html">CLASSIC DRESSERS</a></h1>
 
-<body>
-  <script src="dropdown.js"></script>
-  <script src="me.js"></script>
-  <section id="top">
-    <nav>
+        <div class="navbar" id="navlinks">
+          <span class="close-button">
+            <i class="fa fa-times" onclick="closenav()"></i>
+          </span>
+          <a href="shop.html"><i class="fa fa-home"></i> Home</a>
+          <a href=""><i class="fa fa-user-circle"></i> About</a>
+          <a href="contact.html"><i class="fa fa-address-book"></i> Contact</a>
+          <a href="cart.html"><i class="fa fa-shopping-cart"></i> Cart</a>
+        </div>
+        <span class="menu" onclick="opennav()"><i class="fa fa-bars"></i></span>
+      </nav>
+    </section>
 
-      <h1><a href="index.html">CLASSIC DRESSERS</a></h1>
-
-      <div class="navbar" id="navlinks">
-        <span class="close-button">
-          <i class="fa fa-times" onclick="closenav()"></i>
-        </span>
-        <a href="shop.html"><i class="fa fa-home"></i> Home</a>
-        <a href=""><i class="fa fa-user-circle"></i> About</a>
-        <a href="contact.html"><i class="fa fa-address-book"></i> Contact</a>
-        <a href="cart.html"><i class="fa fa-shopping-cart"></i> Cart</a>
+    <div id="contact">
+      <div class="columns">
+                <div class="contents">
+          <div class="background"><h1>contact us</h1>
+            <p>feel free to drop us a line below</p>
+          </div>
+          <form action="" method="post">
+           
+            <span class="under1">
+               <input type="text" name="" id="" placeholder="full-Name" required />
+</span>
+           
+<span class="under2">
+  <input type="email" name="" id="" placeholder="Email" required />
+</span>
+<span class="under3">     
+<input
+              type="tel"
+              name=""
+              id=""
+              placeholder="Phone-Number"
+              required
+            />
+</span>
+<span class="under4">
+            <textarea
+              name=""
+              id=""
+              cols="50"
+              rows="5"
+              placeholder="message"
+            ></textarea>
+            </span>
+            <button id="sub-btn"><p>submit <i class="fa fa-arrow-right"></i></p> </button>
+          </form>
+        </div>
       </div>
-      <span class="menu" onclick="opennav()"><i class="fa fa-bars"></i></span>
-    </nav>
-  </section>
- 
-  <div class="contact">
-  </div>
-  
-  <footer>
-    <div class="bottom">
-      <hr>
-      <div class="row">
-        <div class="footer-col">
-          <h2>quick links</h2>
-          <a href="shipping.html">shipping policy</a>
-          <a href="return.html">returns & refunds</a>
-          <a href="privacy.html">privacy policy</a>
-          <a href="terms.html">terms of service</a>
-          <a href="contact.html">contact us</a>
-        </div>
-        <div class="footer-col">
-          <h2>social media links</h2>
-          <a href=""><i class="fa fa-whatsapp"></i> whatsapp</a>
-          <a href=""><i class="fa fa-facebook"></i> facebook</a>
-          <a href=""><i class="fa fa-pinterest"></i> pinterest</a>
-          <a href=""><i class="fa fa-instagram"></i> instagram</a>
-
-        </div>
-        <div class="footer-col">
-          <h2>Address</h2>
-          <p>Lorem ipsum dolor, sit amet <br> adipisicing elit. </p>
-         <a href="https://+2348120237430"><i class="fa fas fa-phone"></i>08120237430</a>
-         <a href="www.google.com"><i class="fa fas fa-address-book"></i>godspowerchikamso@gmail.com</a>
-        </div>
-      </div>
-
     </div>
-  </footer>
-</body>
 
+    <footer>
+      <div class="bottom">
+        <hr />
+        <div class="row">
+          <div class="footer-col">
+            <h2>quick links</h2>
+            <a href="shipping.html">shipping policy</a>
+            <a href="return.html">returns & refunds</a>
+            <a href="privacy.html">privacy policy</a>
+            <a href="terms.html">terms of service</a>
+            <a href="contact.html">contact us</a>
+          </div>
+          <div class="footer-col">
+            <h2>social media links</h2>
+            <a href=""><i class="fa fa-whatsapp"></i> whatsapp</a>
+            <a href=""><i class="fa fa-facebook"></i> facebook</a>
+            <a href=""><i class="fa fa-pinterest"></i> pinterest</a>
+            <a href=""><i class="fa fa-instagram"></i> instagram</a>
+          </div>
+          <div class="footer-col">
+            <h2>Address</h2>
+            <p>
+              Lorem ipsum dolor, sit amet <br />
+              adipisicing elit.
+            </p>
+            <a href="https://+2348120237430"
+              ><i class="fa fas fa-phone"></i>08120237430</a
+            >
+            <a href="www.google.com"
+              ><i class="fa fas fa-address-book"></i
+              >godspowerchikamso@gmail.com</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
