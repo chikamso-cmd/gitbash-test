@@ -21,7 +21,12 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: sticky;
+  position: relative;
+}
+@media (max-width :300px){
+  .top2{
+    width: 100%;
+  }
 }
 
 .top3 {
@@ -86,7 +91,7 @@
 /* accordion styles goes here*/
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
-  background-color: #0355ff;
+  background-color: #01b4ac;
   color: #fff;
   cursor: pointer;
   padding: 18px;
@@ -100,7 +105,7 @@
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .accordion:hover {
-  background-color: #0355ff;
+  background-color: #06a0988f;
   outline: none;
   color: #fff;
 }
@@ -111,22 +116,22 @@
   background-color: rgb(255, 255, 255);
   height: 100%;
   overflow: hidden;
-  display: block;
+  display: none;
   transition: 0.7s ease-out;
 }
 
-.accordion:after {
-  content: "\2796";
-  /* Unicode character for "minus" sign (-) */
+.accordion::before {
+  content: "\02795";
+  /* Unicode character for "minus" sign (+) */
   font-size: 13px;
-  color: rgb(187, 19, 19);
   float: right;
-  margin-left: 5px;
+  color: red;
+  margin-left: 5px; 
 }
 
 .active:after {
-  content: '\02795';
-  /* Unicode character for "plus" sign (+) */
+  /* content: ' \2796'; */
+  /* Unicode character for "plus" sign (-) */
 
 }
 
@@ -200,207 +205,6 @@
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-
-/* styles of the card goes here*/
-#product {
-  width: 100%;
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 16px;
-  flex-wrap: wrap;
-  cursor: pointer;
-
-}
-
-#product:hover> :not(:hover) {
-  opacity: .4;
-}
-
-.card {
-  max-width: 270px;
-  height: 100%;
-  overflow: hidden;
-  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
-  background-color: white;
-  transition: 0.8s;
-  
-}
-
-.price {
-  color: gray;
-  font-size: 18px;
-  margin: 0;
-  padding: 0%;
-}
-
-/*
-#card button{
-  border: none;
-  outline: 0;
-  padding: 12px;
-  color: white;
-  background-color: #111;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-  font-size: 18px;
-text-transform: capitalize;
-  transition: all ease-in 0.7s;
-}
-#card button:hover{
-  background-color: rgb(79, 77, 77);
-}*/
-.fa-shopping-cart {
-  margin-left: .89em;
-}
-
-.fa-heart {
-  background: rgb(158, 160, 158);
-  color: #fff;
-  padding: .5em;
-  border-radius: 50%;
-  cursor: pointer;
-  position: relative;
-  top: .7em;
-
-}
-
-/*button hover effect*/
-.btn,
-.rounded {
-  border: none;
-  font-size: 18px;
-  position: relative;
-  width: 100%;
-  cursor: pointer;
-  height: 29%;
-  margin-bottom: 5px;
-}
-
-.rounded {
-  border-radius: 50px;
-}
-
-.text-green {
-  color: #fff;
-   mix-blend-mode: difference; 
-  font-size: 10px;
-}
-
-.rounded::before {
-  border-radius: 50px;
-  width: 25%;
-  background: #0355ff;
-  content: "";
-  transition: all 0.85s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  width: 45%;
-  height: 100%;
-  background: #0575E6;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #021B79, #0575E6);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #021B79, #0575E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  position: absolute;
-  top: 0;
-  left: 0%;
-}
-
-.rounded:hover::before {
-  background: #0575E6;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #021B79, #0575E6);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #021B79, #0575E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  width: 100%;
-}
-@media screen and (min-width:500px) {
-  #card {
-    width: 350px;
-    margin: 0 auto;
-  }
-
-  .rounded {
-    left: 0;
-  }
-}
-
-@media screen and (min-width:300px) {
-  .rounded {
-    left: 0;
-  }
-}
-
-.content {
-  width: 100%;
-  text-align: center;
-  font-size: 13px;
-  text-transform: capitalize;
-  margin: 0 auto;
-}
-.content h4{
-  margin-top: 0;
-}
-
-.star {
-  text-align: center;
-  width: 100%;
-}
-
-.fa-star,
-.fa-star-half {
-  margin: 4px;
-  font-size: 10px;
-}
-
-.price {
-  text-align: center;
-  width: 100%;
-  display: flex;
-  margin: 0 auto;
-  justify-content:center;
-}
-
-.price p {
-  font-size: 12px;
-  text-align: center;
-  margin: 14px;
-}
-
-.price1 {
-  text-decoration: line-through;
-}
-
-.next {
-  background-color: rgb(255, 255, 255);
-  width: 100%;
-  justify-content: center;
-  text-align: center;
-  margin: 20px;
-  display: none;
-}
-
-.next a {
-  color: #000;
-  margin: 8px;
-  background-color: #f9b900;
-  padding: 8px;
-  border-radius: 6px;
-  transition: ease-in-out all 0.4s;
-}
-
-/* .next a:hover {
-  background-color: rgb(210, 216, 216);
-} */
-
-.image {
-  width: 100%;
-  position: relative;
-  overflow: hidden;
-}
-
-.image img {
-  width: 200px;
-  height: 200px;
-}
-
 /*may also like*/
 /*width stretch to 100%*/
 #mayalsolike {
@@ -417,4 +221,106 @@ background: linear-gradient(to right, #021B79, #0575E6); /* W3C, IE 10+/ Edge, F
   background-size: cover;
   width: 100%;
   background: url('images/pexels-ylanite-koppens-934070.jpg');
+}
+.card{
+  width: 15rem;
+  height: 20.5rem;
+  position: relative;
+  background: #fff;
+  border: 3px solid #01b4ac;
+  margin: 10px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.image{
+  width: 16rem;
+  height: 14rem;
+  /* background: #fff; */
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  /* margin-top: 10px; */
+  /* border-radius: 10px; */
+}
+ .content{
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  justify-content: space-between;
+} 
+.content p{
+  color: #01b4ac;
+  font-size: 17px;
+  text-transform: capitalize;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.cart-btn{
+width: auto;
+margin: 0 auto;
+}
+.cart{
+width: 90%;
+padding: 10px;
+font-size: 15px;
+border: 0;
+border-radius: 50px;
+background: #01b4ac;
+/* margin: 0 auto; */
+color: #fff;
+margin-left: 10px;
+box-shadow: 1px 1px 6px 1px #c2bfbf;
+cursor: pointer;
+text-transform: capitalize;
+transition: all .8s;
+}
+.cart:hover{
+background: rgb(4, 212, 185);
+}
+.fa-shopping-cart{
+  margin-left: 6px;
+}
+@media (max-width: 500px){
+  .card{
+    margin: 0 auto;
+    justify-content: center;
+    align-content: center;
+  }
+  .cart{
+    width: 30%;
+    margin-bottom: 10px;
+    position: absolute;
+    left: 0;
+    top: 18rem;
+  }
+}
+@media (max-width: 600px){
+  .card{
+    width: 15rem;
+    height: 21.9rem;
+  }
+  .cart{
+    width: 10rem;
+    margin-bottom: 10px;
+    margin-left: 40px;
+  }
+}
+@media (max-width: 968px){
+  .card{
+    width: 15rem;
+    height: 21.9rem;
+  }
+  .cart{
+    width: 10rem;
+    margin-bottom: 10px;
+    margin-left: 40px;
+  }
+}
+.columns{
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+flex: 1 1 31%;
+flex-wrap: wrap;
 }
